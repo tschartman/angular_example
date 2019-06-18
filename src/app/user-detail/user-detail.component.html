@@ -1,0 +1,5 @@
+<div *ngIf="user">
+<img [src]="user.data.avatar">
+<p>{{ user.data.first_name }} {{ user.data.last_name }}</p>
+</div>
+<div *ngIf="!user">No User found</div>
